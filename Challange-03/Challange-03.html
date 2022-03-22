@@ -8,57 +8,48 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <!-- Bootstrap CSS End -->
   <title>Challenge CH-1</title>
+  <!--Font Source-->
   <script src="https://kit.fontawesome.com/d5bfb13614.js" crossorigin="anonymous"></script>
   <!-- custom css -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!------Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-all">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./Photo/logo.png" style="padding-left: 0px;" width: 100px; height: 34px; left: 136px; top: 25px;></a>
-      <button class="navbar-toggler" mb-4 type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse d-flex flex-row-reverse">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link link tebel sedang" href="#OurService"
-              style="color: black; font-family: helvetica; font-style: normal; font-size: 14px; font-weight: 400;">Our
-              Service &nbsp;&nbsp;</a>
-          </li>
-          <a class="nav-link link tebel sedang" href="#WhyUs"
-            style="color: black; font-family: helvetica; font-style: normal; font-size: 14px; font-weight: 400">Why Us
-            &nbsp;&nbsp;</a>
-          </li>
-          <a class="nav-link link tebel sedang" href="#Testimonial"
-            style="color: black; font-family: helvetica; font-style: normal; font-size: 14px; font-weight: 400">Testimonial
-            &nbsp;&nbsp;</a>
-          </li>
-          <a class="nav-link link tebel sedang" href="#FAQ"
-            style="color: black; font-family: helvetica; font-style: normal; font-size: 14px; font-weight: 400">FAQ
-            &nbsp;&nbsp;</a>
-          </li>
-          <li class="nav-item">
-            <button class="btn my-2 my-sm-0" type="submit"
-              style="background-color: #5CB85F; color: white; border-radius: 2px; font-size: 14px; font-family: Helvetica;">Register</button>
-          </li>
-        </ul>
+      <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+
+          <h5 id="offcanvasRightLabel">BCR</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvasRight">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link text-dark pe-3" aria-current="page" href="#">Our Services</a>
+            <a class="nav-link text-dark pe-3" href=" #">Why Us</a>
+            <a class="nav-link text-dark pe-3" href="#">Testimonial</a>
+            <a class="nav-link text-dark pe-3" href="#" tabindex="-1" aria-disabled="true">FAQ</a>
+            <button type="button" class="btn bg-btn w-50">Register</button>
+          </div>
+        </div>
       </div>
     </div>
+    </div>
   </nav>
-  <!--Navbar End-->
+  <!-- navbar -->
 
-  <!--Content Start-->
-  <div class="container-fluid">
-    <div class="row" style="background-color: #F1F3FF;  height: max-content;">
+  <!-- Header Content Start-->
+  <div class="container-fluid bg-all">
+    <div class="row">
       <!--Section 1-->
-      <div class="col-md-6 mt-5" style="padding-top: 110px; padding-left: 136px;">
+      <div class="col-md-6 mt-5 grid-left">
         <h1 style="color: black; font-family: Helvetica; font-weight: 700; font-size: 36px; line-height: 54px;">Sewa &
           Rental Mobil Terbaik di Kawasan Jakarta</h1>
         <p style="color: black; font-family: Helvetica; font-weight: 300; font-size: 14px; line-height: 20px;">Selamat
@@ -69,62 +60,56 @@
           Sewa Mobil</button>
       </div>
       <!--Section 2-->
-      <div class="col-md-6 mt-5 pt-5">
-        <img style="width: 100%; margin-left: 10px;" src="./Photo/img_car.png">
+      <div class="col-md-6 mt-5 pt-5 grid-right">
+        <img style="width: 100%; margin-left: 10px;" src="./Photo/img_car.png" class="car-img" />
       </div>
     </div>
   </div>
   </header>
-  <!--Content End-->
+  <!-- header Content End -->
 
   <!----Our Service--->
-  <div class="container mt-5 pt-5" id="OurService">
+  <div class="container" id="OurService">
     <div class="row">
       <!--Section 1-->
-      <div class="col-sm" style="margin-top: 65px;">
-        <img style="width: 415px; height: 415px; margin-left: 75px;" src="./Photo/img_service.png">
+      <div class="col-sm grid-service grid-best">
+        <img src="./Photo/img_service.png" class="size-service car-img">
       </div>
       <!--Section 2-->
-      <div class="col-sm" style="margin-top: 8%;">
-        <h1>Best Car Rental For Any Kind Of Trip In Jakarta</h1>
-        <p style="color: black; font-family: Helvetica; font-weight: 300; font-size: 14px; line-height: 20px;">Sewa
-          mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi
+      <div class="col-sm  grid-service">
+        <h3><br> Best Car Rental For Any Kind Of Trip In Jakarta! <br></h3>
+        <p>Sewa mobil di (Lokasimu) bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, kondisi
           mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.</p>
         <!--Section 3-->
         <div class="d-flex flex-row">
-          <div class="">
-            <i class="bi bi-check-lg rounded-circle"
-              style="color: blue; font-size: 20px; background-color: rgb(253, 253, 253); width: 30px; height: 30px;"></i>
+          <div class="p-2">
+            <i class="bi bi-check rounded-circle px-1 icon-tick"></i>
           </div>
-          <div class="p-1 pl-3">Sewa Mobil Dengan Supir di Bali 12 Jam</div>
+          <div class="p-2">Sewa Mobil Dengan Supir di Bali 12 Jam</div>
         </div>
-        <div class="d-flex flex-row mt-2">
-          <div class="">
-            <i class="bi bi-check-lg rounded-circle"
-              style="color: blue; font-size: 20px; background-color: rgb(253, 253, 253); width: 30px; height: 30px;"></i>
+        <div class="d-flex flex-row">
+          <div class="p-2">
+            <i class="bi bi-check rounded-circle px-1 icon-tick"></i>
           </div>
-          <div class="p-1 pl-3">Sewa Mobil Lepas Kunci di Bali 24 Jam</div>
+          <div class="p-2">Sewa Mobil Lepas Kunci di Bali 24 Jam</div>
         </div>
-        <div class="d-flex flex-row mt-2">
-          <div class="">
-            <i class="bi bi-check-lg rounded-circle"
-              style="color: blue; font-size: 20px; background-color: rgb(253, 253, 253); width: 30px; height: 30px;"></i>
+        <div class="d-flex flex-row">
+          <div class="p-2">
+            <i class="bi bi-check rounded-circle px-1 icon-tick"></i>
           </div>
-          <div class="p-1 pl-3">Sewa Mobil Jangka Panjang Bulanan</div>
+          <div class="p-2">Sewa Mobil Jangka Panjang Bulanan</div>
         </div>
-        <div class="d-flex flex-row mt-2">
-          <div class="">
-            <i class="bi bi-check-lg rounded-circle"
-              style="color: blue; font-size: 20px; background-color: rgb(253, 253, 253); width: 30px; height: 30px;"></i>
+        <div class="d-flex flex-row">
+          <div class="p-2">
+            <i class="bi bi-check rounded-circle px-1 icon-tick"></i>
           </div>
-          <div class="p-1 pl-3">Gratis Antar - Jemput Mobil di Bandara</div>
+          <div class="p-2">Gratis Antar - Jemput Mobil di Bandara</div>
         </div>
-        <div class="d-flex flex-row mt-2">
-          <div class="">
-            <i class="bi bi-check-lg rounded-circle"
-              style="color: blue; font-size: 20px; background-color: rgb(253, 253, 253); width: 30px; height: 30px;"></i>
+        <div class="d-flex flex-row">
+          <div class="p-2">
+            <i class="bi bi-check rounded-circle px-1 icon-tick"></i>
           </div>
-          <div class="p-1 pl-3">Layanan Airport Transfer / Drop In Out</div>
+          <div class="p-2">Layanan Airport Transfer / Drop In Out</div>
         </div>
       </div>
     </div>
@@ -132,88 +117,64 @@
   <!--Our Service End-->
 
   <!--WHY US-->
-  <div class="container mt-5" id="WhyUs">
-    <div class="row" style="padding-top: 150px; height: max-content;">
-      <div class="col">
-        <br>
-        <h3 class="card-title"
-          style="font-size: 24px; font-family: Helvetica; font-weight: 700; font-style: normal; line-height: 36px;">Why
-          Us?</h3>
-        <p class="card-title"
-          style="font-size: 14px; font-family: Helvetica; font-weight: 300; font-style: normal; line-height: 20px;">
-          Mengapa harus pilih Binar Car Rental?</p>
+  <section class="grid-service">
+    <div class="container mt-5" id="WhyUs">
+      <div class="Whyus">
+        <h3><b>Why Us?</b></h3>
+        <p>Mengapa harus pilih Binar Car Rental?</p>
       </div>
-    </div>
-  </div>
-  <br>
-  <div class="container" style="width: 100%;">
-    <div class="row">
-      <div class="col order-first">
-        <div class="card" style="width: 100%;">
-          <div class="card-body pt-3">
-            <img src="./Photo/icon_complete.png" style="width: 32px;">
-            <h5 class="card-title mt-3"
-              style="font-size: 16px; font-family: Helvetica; font-weight: 700; font-style: normal; line-height: 24px;">
-              Mobil Lengkap</h5>
-            <p class="card-text"
-              style="font-size: 14px; font-family: Helvetica; font-weight: 300; font-style: normal; line-height: 20px;">
-              Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat.</p>
+      <div class="why-text">
+        <div class="row">
+          <div class="col-md ">
+            <div class="card icon-promotion">
+              <div class="card-body">
+                <img src="./Photo/icon_complete.png">
+                <h6 style="margin-top: 10px;"><b>Mobil Lengkap</b></h6>
+                <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md grid-service1">
+            <div class="card icon-promotion">
+              <div class="card-body">
+                <img src="./Photo/icon_price.png">
+                <h6 style="margin-top: 10px;"><b>Harga Murah</b></h6>
+                <p>Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md grid-service1">
+            <div class="card icon-promotion">
+              <div class="card-body">
+                <img src="./Photo/icon_24hrs.png">
+                <h6 style="margin-top: 10px;"><b>Layanan 24 Jam</b></h6>
+                <p>Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md grid-service1">
+            <div class="card icon-promotion">
+              <div class="card-body">
+                <img src="./Photo/icon_professional.png">
+                <h6 style="margin-top: 10px;"><b>Sopir Profesional</b></h6>
+                <p>Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card" style="width: 100%;">
-          <div class="card-body">
-            <img src="./Photo/icon_price.png" style="width: 32px;">
-            <h5 class="card-title mt-3"
-              style="font-size: 16px; font-family: Helvetica; font-weight: 700; font-style: normal; line-height: 24px;">
-              Harga Murah</h5>
-            <p class="card-text"
-              style="font-size: 14px; font-family: Helvetica; font-weight: 300; font-style: normal; line-height: 20px;">
-              Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain</p>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 100%;">
-          <div class="card-body">
-            <img src="./Photo/icon_24hrs.png" style="width: 32px;">
-            <h5 class="card-title mt-3"
-              style="font-size: 16px; font-family: Helvetica; font-weight: 700; font-style: normal; line-height: 24px;">
-              Layanan 24 Jam</h5>
-            <p class="card-text"
-              style="font-size: 14px; font-family: Helvetica; font-weight: 300; font-style: normal; line-height: 20px;">
-              Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col order-last">
-        <div class="card" style="width: 100%;">
-          <div class="card-body">
-            <img src="./Photo/icon_professional.png" style="width: 32px;">
-            <h5 class="card-title mt-3"
-              style="font-size: 16px; font-family: Helvetica; font-weight: 700; font-style: normal; line-height: 24px;">
-              Sopir Profesional</h5>
-            <p class="card-text"
-              style="font-size: 14px; font-family: Helvetica; font-weight: 300; font-style: normal; line-height: 20px;">
-              Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
   <!--Why-Us End-->
 
   <!--Testimonial-->
   <div class="container-fluid pt-3" width="100%" id="Testimonial">
-    <div class="testimonial" style="margin-top: 130px;">
+    <div class="testimonial">
       <h1 class="text-center">Testimonial</h1>
       <p class="text-center">Berbagai review positif dari para pelanggan kami</p>
     </div>
   </div>
   <!--Carousel-->
-  <div class="container-fluid pt-3">
+  <!-- <div class="container-fluid pt-3">
     <div class="row">
       <div class="col-md-12" style="overflow-x: hidden;">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
@@ -325,233 +286,186 @@
           </a>
         </div>
       </div>
-    </div>
-    <!--Sewa mobil dilokasimu-->
-    <div class="container text-center text-white rounded mt-5"
-      style="background-color: #0D28A6; height: 365px; width: 85%;">
-      <p style="padding-top: 20px; padding-bottom: 40px;">
-        <h1 class="text-36-bold">Sewa Mobil di Jakarta Sekarang</h1>
-        <br>
-        <p class="text-14-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor
-          incididunt ut labore et dolore magna aliqua</p>
-        <a class="btn btn-info mt-5" style="background-color: #5CB85F;" href="#">Sewa Mobil Sekarang</a>
-      </p>
-    </div>
-    <!--Testimonial End-->
-
-    <!--FAQ-->
-    <div class="container mt-5 pt-5" style="margin-top: 250px; " id="FAQ">
-      <div class="row" style="margin-top: 130px;" style="margin-top: 130px;">
-        <div class="col-sm-6">
-          <h1 class="text-24-bold">Frequently Asked Question</h1>
-          <p class="text-16-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <!-- <div class="col-sm-6 faq">
-          <div id="accordion text-14-light">
-            <div class="card mb-3">
-              <div class="card-header bg-white" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                    aria-controls="collapseOne" style="color: black;">
-                    Apa saja syarat yang dibutuhkan?
-                  </button>
-                  <i class="bi bi-chevron-down" data-toggle="collapse" data-target="#collapseOne"></i>
-                </h5>
-              </div>
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod”
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-header bg-white" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="false" aria-controls="collapseTwo" style="color: black;">
-                    Berapa hari minimal sewa mobil lepas kunci?
-                  </button>
-                  <i class="bi bi-chevron-down" data-toggle="collapse" data-target="#collapseTwo"></i>
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod”
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-header bg-white" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="false" aria-controls="collapseThree" style="color: black;">
-                    Berapa hari sebelumnya sabaiknya booking sewa mobil?
-                  </button>
-                  <i class="bi bi-chevron-down" data-toggle="collapse" data-target="#collapseThree"></i>
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod”
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-header bg-white" id="headingFour">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
-                    aria-expanded="false" aria-controls="collapseFour" style="color: black;">
-                    Apakah Ada biaya antar-jemput?
-                  </button>
-                  <i class="bi bi-chevron-down" data-toggle="collapse" data-target="#collapseFour"></i>
-                </h5>
-              </div>
-              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod”
-                </div>
-              </div>
-            </div>
-            <div class="card mb-3">
-              <div class="card-header bg-white" id="headingFive">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
-                    aria-expanded="false" aria-controls="collapseFive" style="color: black;">
-                    Bagaimana jika terjadi kecelakaan?
-                  </button>
-                  <i class="bi bi-chevron-down" data-toggle="collapse" data-target="#collapseFive"></i>
-                </h5>
-              </div>
-              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                <div class="card-body">
-                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod”
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div> -->
-    <div class="col-sm-6 faq">
-    <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingfour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
-            Accordion Item #4
-          </button>
-        </h2>
-        <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="flush-headingfive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false" aria-controls="flush-collapsefive">
-            Accordion Item #5
-          </button>
-        </h2>
-        <div id="flush-collapsefive" class="accordion-collapse collapse" aria-labelledby="flush-headingfive" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+  <!--Testimonial End-->
+
+  <!--Sewa mobil dilokasimu-->
+  <div class="container grid-service">
+    <div class=" grid-rentcar">
+      <div class="row">
+        <div class="col-sm text-center text-light">
+          <h1 class="pb-3 pt-5">Sewa Mobil di <br>Jakarta<br> Sekarang</h1>
+          <p class="spacing-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. </p>
+          <a class="btn bg-btn mt-5 mb-5" style="background-color: #5CB85F;" href="#">Sewa Mobil Sekarang</a>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
+  <!--Sewa mobil dilokasimu End-->
 
-  
-    <!--FAQ End-->
 
-    <!--FOOTER-->
-    <footer>
-      <div class="container mt-5 pt-5" width="100%">
-        <div class="row text-left">
-          <div class="col-md-3">
-            <ul style="list-style-type: none; font-size: 14px;">
-              <li>
-                Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
-              </li>
-              <br />
-              <li>binarcarrental@gmail.com</li>
-              <br />
-              <li>081-233-334-808</li>
-            </ul>
+  <div class="container mt-5 pt-5  grid-service grid-service1" id="FAQ">
+    <div class="row" style="padding-top: 50px; height: max-content;">
+      <div class="col-sm faq">
+        <h4 style="font-size: 24px; font-family: Helvetica; font-weight: 700; line-height: 36px;">Frequently Asked
+          Question</h4>
+        <p style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;">Lorem ipsum dolor sit
+          amet, consectetur adipiscing</p>
+      </div>
+      <div class="col-md-7">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <!--Konten 1-->
+          <div class="accordion-item border border-1">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;"
+                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Apa saja syarat yang dibutuhkan?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+              style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;">Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit.
+              <div class="accordion-body"></div>
+            </div>
           </div>
-          <div class="col-md-3">
-            <ul style="list-style-type: none; font-size: 14px">
-              <li>Our services</li>
-              <br />
-              <li>Why Us</li>
-              <br />
-              <li>Testimonial</li>
-              <br />
-              <li>FAQ</li>
-            </ul>
+          <!--Konten 1 End-->
+          <br>
+          <!--Konten 2-->
+          <div class="accordion-item border border-1">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;"
+                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Berapa hari minimal sewa mobil lepas kunci?
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+              style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;">Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit.
+              <div class="accordion-body"></div>
+            </div>
           </div>
-          <div class="col-md-3">
-            <p style="font-size: 14px">Connect with us</p>
-            <img style="image-resolution: 20px" src="Photo/icon_facebook.png" alt="" />
-            <img src="Photo/icon_instagram.png" alt="" />
-            <img src="Photo/icon_twitter.png" alt="" />
-            <img src="Photo/icon_mail.png" alt="" />
-            <img src="Photo/icon_twitch.png" alt="" />
+          <!--Konten 2 End-->
+          <br>
+          <!--Konten 3-->
+          <div class="accordion-item border border-1">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;"
+                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Berapa hari sebelumnya sebaiknya <br>booking sewa mobil?
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+              style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;">Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit.
+              <div class="accordion-body"></div>
+            </div>
           </div>
-          <div class="col-md-3">
-            <p style="font-size: 14px">Copyright Binar 2022</p>
-            <div style="
+          <!--Konten 3 End-->
+          <br>
+          <!--Konten 4-->
+          <div class="accordion-item border border-1">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;"
+                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                Apakah ada biaya antar-jemput?
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample"
+              style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;"> Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit.
+              <div class="accordion-body"></div>
+            </div>
+          </div>
+          <!--Konten 4 End-->
+          <br>
+          <!--Konten 5 -->
+          <div class="accordion-item border border-1">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;"
+                class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                Bagaimana jika terjadi kecelakaan?
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample"
+              style="font-size: 14px; font-family: Helvetica; font-weight: 300; line-height: 20px;"> Lorem ipsum dolor
+              sit, amet consectetur adipisicing elit.
+              <div class="accordion-body"></div>
+            </div>
+          </div>
+          <!--Konten 5 End-->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--FAQ-->
+
+  <!--FOOTER-->
+  <footer>
+    <div class="container mb-5 grid-service grid-service1">
+      <div class="row">
+        <div class="col-sm">
+          <ul style="list-style-type: none; font-size: 14px;">
+            <li>
+              Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+            </li>
+            <br />
+            <li>binarcarrental@gmail.com</li>
+            <br />
+            <li>081-233-334-808</li>
+          </ul>
+        </div>
+        <div class="col-sm footer">
+          <ul style="list-style-type: none; font-size: 14px">
+            <li>Our services</li>
+            <br />
+            <li>Why Us</li>
+            <br />
+            <li>Testimonial</li>
+            <br />
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="col-sm footer">
+          <p>Connect with us</p>
+          <img src="icon_facebook.png">
+          <img src="icon_instagram.png" class="ps-3">
+          <img src="icon_twitter.png" class="ps-3">
+          <img src="icon_mail.png" class="ps-3">
+          <img src="icon_twitch.png" class="ps-3">
+        </div>
+        <div class="col-md-3 grid-service1">
+          <p style="font-size: 14px">Copyright Binar 2022</p>
+          <div style="
                   width: 100px;
                   height: 34px;
                   background-color: rgb(60, 52, 128);"></div>
-          </div>
         </div>
       </div>
-    </footer>
-    <!--Footer End-->
+    </div>
+  </footer>
 
-    <!--JS-->
-    <!-- Optional JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- bootstrap icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!--End Js-->
+  <!--Footer End-->
+
+  <!--JS-->
+  <!-- Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!--End Js-->
 </body>
 
 </html>
